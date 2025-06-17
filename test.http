@@ -1,0 +1,16 @@
+
+GET http://localhost:4004/odata/v4/hotel/Guests
+
+###
+POST http://localhost:4004/odata/v4/hotel/Guests
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phoneNumber": "9876543210",
+  "address": "123 Main Street, New York",
+  "idProofType": "Passport",
+  "idProofNumber": "P1234567"
+}

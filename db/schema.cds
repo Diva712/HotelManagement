@@ -21,3 +21,20 @@ entity Rooms : managed {
   floor              : Integer;
   description        : String;
 }
+
+// enum BookingStatus {
+//   Confirmed;
+//   Cancelled;
+//   Completed;
+// }
+entity Bookings : managed {
+  key bookingID      : UUID;
+  guestName          : String(100);
+  roomNumber         : Integer;
+  checkInDate        : Date;
+  checkOutDate       : Date;
+  numberOfGuests     : Integer;
+  bookingStatus      : String;
+  notes              : String;
+}
+

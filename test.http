@@ -6,11 +6,48 @@ POST http://localhost:4004/odata/v4/hotel/Guests
 Content-Type: application/json
 
 {
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "john.doe@example.com",
+  "firstName": "William",
+  "lastName": "Shakespears",
+  "email": "william.shakespears@example.com",
   "phoneNumber": "9876543210",
   "address": "123 Main Street, New York",
   "idProofType": "Passport",
   "idProofNumber": "P1234567"
+}
+
+
+
+### Get all Rooms
+GET http://localhost:4004/odata/v4/hotel/Rooms
+
+
+### Create a new Room
+POST http://localhost:4004/odata/v4/hotel/Rooms
+Content-Type: application/json
+
+{
+  "roomNumber": 102,
+  "type": "Single",
+  "status": "Available",
+  "pricePerNight": 100.00,
+  "floor": 2,
+  "description": "A single room with city view and attached bathroom."
+}
+
+### Get Bookings
+http://localhost:4004/odata/v4/hotel/Bookings
+
+
+### Create a new Booking
+POST http://localhost:4004/odata/v4/hotel/Bookings
+Content-Type: application/json
+
+{
+  "guestName": "John Doe",
+  "roomNumber": 101,
+  "checkInDate": "2025-06-20",
+  "checkOutDate": "2025-06-23",
+  "numberOfGuests": 2,
+  "bookingStatus": "Confirmed",
+  "notes": "Late check-in requested."
 }

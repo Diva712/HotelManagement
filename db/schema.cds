@@ -15,8 +15,8 @@ entity Guests : managed {
 
 entity Rooms : managed {
   key roomNumber     : Integer;
-  type               : String(20); // e.g. Single, Double, Suite
-  status             : String(20); // e.g. Available, Booked, Maintenance
+  type               : String(20); // Single, Double, Suite
+  status             : String(20); // Available, Booked, Maintenance
   pricePerNight      : Decimal(10,2);
   floor              : Integer;
   description        : String;

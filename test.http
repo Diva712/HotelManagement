@@ -22,13 +22,13 @@ GET http://localhost:4004/odata/v4/hotel/Rooms
 
 
 ### Create a new Room
-POST http://localhost:4004/odata/v4/hotel/Rooms
+POST http://localhost:42295/odata/v4/hotel/Rooms
 Content-Type: application/json
 
 {
-  "roomNumber": 102,
+  "roomNumber": 104,
   "type": "Single",
-  "status": "Available",
+  "status": "Availableyyyyy",
   "pricePerNight": 100.00,
   "floor": 2,
   "description": "A single room with city view and attached bathroom."

@@ -15,6 +15,7 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-hotelmanagement": "cds watch --open hotelmanagement/webapp/index.html?sap-ui-xx-viewCache=false"
   }
 }

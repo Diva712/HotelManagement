@@ -1,0 +1,54 @@
+<mvc:View controllerName="com.ingenx.hotelmanagement.controller.roomRecords" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+  <Page id="roomsPage" title="Rooms Record">
+    <Table id="roomsTable" items="{/Rooms}">
+        <columns>
+            <Column id="colRoomNumber">
+                <header>
+                    <Label id="lblRoomNumber" text="Room Number" />
+                </header>
+            </Column>
+            <Column id="colType">
+                <header>
+                    <Label id="lblType" text="Type" />
+                </header>
+            </Column>
+            <Column id="colStatus">
+                <header>
+                    <Label id="lblStatus" text="Status" />
+                </header>
+            </Column>
+            <Column id="colPrice">
+                <header>
+                    <Label id="lblPrice" text="Price Per Night" />
+                </header>
+            </Column>
+            <Column id="colFloor">
+                <header>
+                    <Label id="lblFloor" text="Floor" />
+                </header>
+            </Column>
+            <Column id="colDescription">
+                <header>
+                    <Label id="lblDescription" text="Description" />
+                </header>
+            </Column>
+        </columns>
+        <items>
+            <ColumnListItem id="roomItem">
+                <cells>
+                    <Text id="txtRoomNumber" text="{roomNumber}" />
+                    <Text id="txtType" text="{type}" />
+                    <Text id="txtStatus" text="{status}" />
+                    <Text id="txtPrice" text="{pricePerNight}" />
+                    <Text id="txtFloor" text="{floor}" />
+                    <Text id="txtDescription" text="{description}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</Page>
+
+
+</mvc:View>

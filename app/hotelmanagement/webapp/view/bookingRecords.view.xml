@@ -1,0 +1,49 @@
+<mvc:View controllerName="com.ingenx.hotelmanagement.controller.bookingRecords"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="booking_page" title="Bookings Record">
+        <Table id="booking_table" items="{/Bookings}">
+            <columns>
+                <Column id="booking_colBookingID">
+                    <header><Label id="booking_lblBookingID" text="Booking ID" /></header>
+                </Column>
+                <Column id="booking_colGuestName">
+                    <header><Label id="booking_lblGuestName" text="Guest Name" /></header>
+                </Column>
+                <Column id="booking_colRoomNumber">
+                    <header><Label id="booking_lblRoomNumber" text="Room Number" /></header>
+                </Column>
+                <Column id="booking_colCheckInDate">
+                    <header><Label id="booking_lblCheckInDate" text="Check In Date" /></header>
+                </Column>
+                <Column id="booking_colCheckOutDate">
+                    <header><Label id="booking_lblCheckOutDate" text="Check Out Date" /></header>
+                </Column>
+                <Column id="booking_colNumberOfGuests">
+                    <header><Label id="booking_lblNumberOfGuests" text="Number Of Guests" /></header>
+                </Column>
+                <Column id="booking_colBookingStatus">
+                    <header><Label id="booking_lblBookingStatus" text="Booking Status" /></header>
+                </Column>
+                <Column id="booking_colNotes">
+                    <header><Label id="booking_lblNotes" text="Notes" /></header>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem id="booking_listItem">
+                    <cells>
+                        <Text id="booking_txtBookingID" text="{bookingID}" />
+                        <Text id="booking_txtGuestName" text="{guestName}" />
+                        <Text id="booking_txtRoomNumber" text="{roomNumber}" />
+                        <Text id="booking_txtCheckInDate" text="{checkInDate}" />
+                        <Text id="booking_txtCheckOutDate" text="{checkOutDate}" />
+                        <Text id="booking_txtNumberOfGuests" text="{numberOfGuests}" />
+                        <Text id="booking_txtBookingStatus" text="{bookingStatus}" />
+                        <Text id="booking_txtNotes" text="{notes}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

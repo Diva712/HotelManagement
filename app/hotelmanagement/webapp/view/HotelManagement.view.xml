@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.ingenx.hotelmanagement.controller.HotelManagement"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <GenericTile id="IdHomeAR" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Add Rooms" press="onPressAddRoom">
+            <TileContent id="TCaddRoom">
+                <ImageContent id="idHPAddEmpIcon" src="sap-icon://building" />
+            </TileContent>
+        </GenericTile>
+        <GenericTile id="IdHomeAB" header="Add Bookings" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" press="onPressAddBooking"
+            xmlns="sap.m">
+            <TileContent id="TCaddBooking">
+                <ImageContent id="ImageContent" src="sap-icon://bbyd-active-sales" />
+            </TileContent>
+        </GenericTile>
+    </Page>
+</mvc:View>

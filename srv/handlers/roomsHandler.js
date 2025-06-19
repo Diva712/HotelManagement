@@ -1,11 +1,11 @@
-module.exports = async((srv) =>{
+module.exports = async(srv) =>{
 
     //Create request
     srv.before('CREATE' , 'Rooms' , async(req)=>{
         try {
 
             let missing = validateRooms(req.data);
-            if(missing == false){
+            if(missing.valid === false){
                 req.reject(missing.errors)
             }
 
@@ -83,4 +83,4 @@ module.exports = async((srv) =>{
 
 
     
-})
+}

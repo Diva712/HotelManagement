@@ -2,6 +2,14 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
   <Page id="roomsPage" title="Rooms Record">
+  <Bar id="RPBar" class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+        <contentRight>
+            <Button text="Add Room " id="IdAddRoom" type="Emphasized" press="onPressAddRoom"></Button>
+            <!-- <Button text="Edit Room " type="Emphasized" press="onPressEditRoom"></Button>
+            <Button text="Delete Room" type="Emphasized" press="onPressDeleteRoom"></Button> -->
+
+        </contentRight>
+    </Bar>
     <Table id="roomsTable" items="{/Rooms}">
         <columns>
             <Column id="colRoomNumber">

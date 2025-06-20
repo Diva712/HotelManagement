@@ -28,7 +28,7 @@ Content-Type: application/json
 {
   "roomNumber": 109,
   "type": "Single",
-  "status": "Availableyyyyy",
+  "status": "Available",
   "pricePerNight": 100.00,
   "floor": 2,
   "description": "A single room with city view and attached bathroom."

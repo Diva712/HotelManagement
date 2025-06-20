@@ -3,6 +3,14 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="booking_page" title="Bookings Record">
+    <Bar id="BPBar" class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+        <contentRight>
+            <Button text="Add Bookings " id="IdAddBookings" type="Emphasized" press="onPressAddBooking"></Button>
+            <!-- <Button text="Edit Room " type="Emphasized" press="onPressEditRoom"></Button>
+            <Button text="Delete Room" type="Emphasized" press="onPressDeleteRoom"></Button> -->
+
+        </contentRight>
+    </Bar>
         <Table id="booking_table" items="{/Bookings}">
             <columns>
                 <Column id="booking_colBookingID">

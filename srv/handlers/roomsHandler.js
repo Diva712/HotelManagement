@@ -49,9 +49,10 @@ module.exports = async(srv) =>{
     function validateRooms(room){
         const errors = [];
     // Validate roomNumber
-    if (!Number.isInteger(room.roomNumber) || room.roomNumber <= 0) {
-        errors.push("roomNumber must be a positive integer.");
-    }
+    // if (!Number.isInteger(room.roomNumber) || room.roomNumber <= 0) {
+    //     console.log("Type of roomNumber:" , typeof room.roomNumber);
+    //     errors.push("roomNumber must be a positive integer.");
+    // }
     // Validate type
     const validTypes = ["Single", "Double", "Suite"];
     if (!validTypes.includes(room.type)) {
